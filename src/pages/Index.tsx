@@ -1,16 +1,35 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { WeddingNavigation } from "@/components/wedding/WeddingNavigation";
+import { HeroSection } from "@/components/wedding/HeroSection";
+import { OurStory } from "@/components/wedding/OurStory";
+import { EventDetails } from "@/components/wedding/EventDetails";
+import { RSVPSection } from "@/components/wedding/RSVPSection";
+import { GiftList } from "@/components/wedding/GiftList";
+import { Gallery } from "@/components/wedding/Gallery";
+import { MessagesSection } from "@/components/wedding/MessagesSection";
+import { WeddingParty } from "@/components/wedding/WeddingParty";
+import { GuestManual } from "@/components/wedding/GuestManual";
+import { FAQSection } from "@/components/wedding/FAQSection";
+import { ContactSection } from "@/components/wedding/ContactSection";
+import { PetalParticles } from "@/components/wedding/PetalParticles";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
+    <div className="min-h-screen">
+      <PetalParticles />
+      <WeddingNavigation />
+      <HeroSection />
+      <OurStory />
+      <EventDetails />
+      <RSVPSection />
+      <GiftList />
+      <Gallery />
+      <MessagesSection />
+      <WeddingParty />
+      <GuestManual />
+      <FAQSection />
+      <ContactSection />
     </div>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
