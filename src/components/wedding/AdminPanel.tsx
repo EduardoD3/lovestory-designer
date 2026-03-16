@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Users, Check, X, MessageCircle, Lock } from "lucide-react";
-import { supabase, type RSVPResponse, type GuestMessage } from "@/integrations/supabase/client";
+import { supabase } from "@/integrations/supabase/client";
+import type { RSVPResponse, GuestMessage } from "@/integrations/supabase/types-ext";
 
 const ADMIN_PASSWORD = "bj2026admin";
 

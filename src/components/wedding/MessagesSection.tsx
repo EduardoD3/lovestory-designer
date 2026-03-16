@@ -2,7 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { Send, Heart } from "lucide-react";
-import { supabase, type GuestMessage } from "@/integrations/supabase/client";
+import { supabase } from "@/integrations/supabase/client";
+import type { GuestMessage } from "@/integrations/supabase/types-ext";
 
 export const MessagesSection = () => {
   const ref = useRef(null);
