@@ -5,6 +5,7 @@ import { Check, Send } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import heroFloral from "@/assets/hero-floral.jpg";
 
+
 export const RSVPSection = () => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
