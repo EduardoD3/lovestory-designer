@@ -39,7 +39,7 @@ const luaDeMel: GiftItem[] = [
   },
 ];
 
-const reformaCasa = [
+const reformaCasa: GiftItem[] = [
   {
     icon: Home,
     category: "reforma da casa 🏡",
