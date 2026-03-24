@@ -7,8 +7,8 @@ import venueImg from "@/assets/venue.jpg";
 const agenda = [
   { time: "17h30", label: "Abertura dos Portões", icon: Heart, description: "Recepção dos convidados" },
   { time: "18h00", label: "Cerimônia", icon: Star, description: "Troca de alianças e votos" },
-  { time: "19h00", label: "Coquetel", icon: Music, description: "Drinks e aperitivos" },
-  { time: "20h00", label: "Jantar & Festa", icon: Music, description: "Celebração até o amanhecer" },
+  { time: "19h00", label: "Coquetel", icon: Music, description: "Aperitivos e recepção especial" },
+  { time: "20h00", label: "Jantar & Festa", icon: Music, description: "Celebração ao lado de quem amamos" },
 ];
 
 export const EventDetails = () => {

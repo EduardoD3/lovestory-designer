@@ -27,8 +27,7 @@ const PartyCard = ({ person, index }: { person: { name: string; role: string }; 
         {person.name.split(" ").map((n) => n[0]).slice(0, 2).join("")}
       </span>
     </div>
-    <h4 className="font-display text-base text-marsala mb-1">{person.name}</h4>
-    <p className="text-xs uppercase tracking-widest text-gold/80">{person.role}</p>
+    <h4 className="font-display text-base text-marsala">{person.name}</h4>
   </motion.div>
 );
 
