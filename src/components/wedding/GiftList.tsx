@@ -58,7 +58,7 @@ const reformaCasa: GiftItem[] = [
   },
 ];
 
-const experiencias = [
+const experiencias: GiftItem[] = [
   {
     icon: Heart,
     category: "experiências novas 💛",
