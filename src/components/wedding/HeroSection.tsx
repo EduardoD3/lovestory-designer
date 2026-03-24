@@ -49,7 +49,7 @@ export const HeroSection = () => {
           transition={{ duration: 1, delay: 0.2 }}
           className="font-script text-2xl md:text-3xl text-gold mb-4"
         >
-          você está convidado para o casamento de
+          Com alegria, convidamos você para celebrar o nosso casamento
         </motion.p>
 
         <motion.h1
@@ -74,16 +74,25 @@ export const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 1.1 }}
-          className="font-display text-6xl md:text-8xl lg:text-9xl font-light text-card tracking-wide mb-6"
+          className="font-display text-6xl md:text-8xl lg:text-9xl font-light text-card tracking-wide mb-4"
         >
           Jaqueline
         </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 1.3 }}
+          className="font-script text-xl md:text-2xl text-gold/80 mb-6"
+        >
+          Um novo capítulo da nossa história começa aqui
+        </motion.p>
 
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.5 }}
-          className="flex items-center justify-center gap-4 mb-3"
+          className="flex items-center justify-center gap-4 mb-2"
         >
           <div className="h-px w-16 bg-gold/60" />
           <p className="text-gold/80 uppercase tracking-[0.3em] text-xs font-light">
@@ -96,9 +105,9 @@ export const HeroSection = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.7 }}
-          className="text-card/70 text-sm tracking-widest uppercase mb-10"
+          className="text-card/70 text-sm tracking-widest uppercase mb-8"
         >
-          às 18h · Espaço Elegance Eventos
+          Espaço Elegance Eventos · 18h00
         </motion.p>
 
         {/* Countdown */}
@@ -108,6 +117,9 @@ export const HeroSection = () => {
           transition={{ duration: 1, delay: 2 }}
           className="mb-12"
         >
+          <p className="font-script text-lg text-gold/80 mb-4">
+            Faltam poucos dias para o nosso grande dia
+          </p>
           <CountdownTimer targetDate="2026-11-22T18:00:00" />
         </motion.div>
 
@@ -122,19 +134,19 @@ export const HeroSection = () => {
             onClick={() => scrollTo("#rsvp")}
             className="btn-gold-shimmer text-sm uppercase tracking-widest font-medium px-8 py-4 rounded-full text-card"
           >
-            Confirmar Presença
+            Confirmar presença 💍
           </button>
           <button
             onClick={() => scrollTo("#presentes")}
             className="border border-card/40 text-card text-sm uppercase tracking-widest px-8 py-4 rounded-full hover:border-gold hover:text-gold transition-all duration-300"
           >
-            Lista de Presentes
+            Ver lista de presentes
           </button>
           <button
             onClick={() => scrollTo("#evento")}
             className="border border-card/40 text-card text-sm uppercase tracking-widest px-8 py-4 rounded-full hover:border-gold hover:text-gold transition-all duration-300"
           >
-            Ver Detalhes
+            Mais informações
           </button>
         </motion.div>
 
