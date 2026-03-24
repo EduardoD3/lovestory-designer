@@ -12,7 +12,7 @@ type GiftItem = {
   link?: string;
 };
 
-const luaDeMel = [
+const luaDeMel: GiftItem[] = [
   {
     icon: Plane,
     category: "lua de mel ✈️",
