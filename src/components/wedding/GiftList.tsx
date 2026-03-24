@@ -127,7 +127,7 @@ const CategorySection = ({
 );
 
 export const GiftList = () => {
-  const handleContribute = (gift: (typeof luaDeMel)[0]) => {
+  const handleContribute = (gift: GiftItem) => {
     if (gift.pix) {
       navigator.clipboard.writeText(gift.pix).then(() => {
         alert(`Chave Pix copiada: ${gift.pix}\n\nObrigado pelo presente! 💕`);
