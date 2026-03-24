@@ -75,8 +75,8 @@ const CategorySection = ({
   onContribute,
 }: {
   title: string;
-  gifts: typeof luaDeMel;
-  onContribute: (gift: (typeof luaDeMel)[0]) => void;
+  gifts: GiftItem[];
+  onContribute: (gift: GiftItem) => void;
 }) => (
   <div className="mb-14">
     <motion.h3
