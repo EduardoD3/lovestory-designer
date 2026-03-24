@@ -1,5 +1,16 @@
+import React from "react";
 import { motion } from "framer-motion";
-import { ExternalLink, Heart, Gift, Plane, Home } from "lucide-react";
+import { ExternalLink, Heart, Plane, Home } from "lucide-react";
+
+type GiftItem = {
+  icon: React.ElementType;
+  category: string;
+  title: string;
+  description: string;
+  value: string;
+  pix?: string;
+  link?: string;
+};
 
 const luaDeMel = [
   {
