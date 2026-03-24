@@ -7,8 +7,8 @@ import venueImg from "@/assets/venue.jpg";
 const agenda = [
   { time: "17h30", label: "Abertura dos Portões", icon: Heart, description: "Recepção dos convidados" },
   { time: "18h00", label: "Cerimônia", icon: Star, description: "Troca de alianças e votos" },
-  { time: "19h00", label: "Coquetel", icon: Music, description: "Drinks e aperitivos" },
-  { time: "20h00", label: "Jantar & Festa", icon: Music, description: "Celebração até o amanhecer" },
+  { time: "19h00", label: "Coquetel", icon: Music, description: "Aperitivos e recepção especial" },
+  { time: "20h00", label: "Jantar & Festa", icon: Music, description: "Celebração ao lado de quem amamos" },
 ];
 
 export const EventDetails = () => {
@@ -127,10 +127,16 @@ export const EventDetails = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.9 }}
         >
-          <h3 className="font-display text-3xl text-marsala text-center mb-12">
+          <h3 className="font-display text-3xl text-marsala text-center mb-4">
             <span className="font-script text-gold text-2xl block mb-2">programação</span>
             Agenda do Dia
           </h3>
+          <p className="text-foreground/60 text-center text-sm mb-4 font-light">
+            Preparamos cada momento com muito carinho para celebrar esse dia especial com você.
+          </p>
+          <p className="text-gold/70 text-center text-xs uppercase tracking-widest mb-10">
+            Horários sujeitos a pequenos ajustes
+          </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {agenda.map((item, i) => (
