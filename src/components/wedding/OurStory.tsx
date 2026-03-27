@@ -61,7 +61,6 @@ const TimelineItem = ({ item, index }: { item: typeof storyItems[0]; index: numb
       )}
 
       <div className={`w-full md:w-1/2 ${isLeft ? "md:text-left" : "md:text-right"} text-center`}>
-        <p className="font-script text-3xl text-gold mb-2">{item.year}</p>
         <h3 className="font-display text-2xl md:text-3xl text-marsala mb-4">{item.title}</h3>
         <div className={`h-px w-12 bg-gradient-gold mb-4 ${isLeft ? "md:ml-0 mx-auto" : "md:ml-auto mx-auto"}`} />
         <p className="text-foreground/70 leading-relaxed font-light">{item.description}</p>
