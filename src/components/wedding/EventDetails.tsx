@@ -109,16 +109,13 @@ export const EventDetails = () => {
           transition={{ duration: 0.9 }}
           className="mb-16 rounded-2xl overflow-hidden border border-gold/20 shadow-card"
         >
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975!2d-46.6333!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAxLjgiUyA0NsKwMzgnMDAuMCJX!5e0!3m2!1spt-BR!2sbr!4v1699900000000"
-            width="100%"
-            height="320"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Localização do evento"
-          />
+          <div className="flex items-center justify-center h-64 bg-champagne/30">
+            <div className="text-center px-6">
+              <MapPin size={32} className="text-gold mx-auto mb-3" />
+              <p className="font-display text-lg text-marsala mb-2">Porto Velho — RO</p>
+              <p className="text-foreground/60 text-sm italic">O endereço exato será divulgado em breve</p>
+            </div>
+          </div>
         </motion.div>
 
         {/* Agenda */}

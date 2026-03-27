@@ -97,7 +97,7 @@ export const ContactSection = () => (
           Breno & Jaqueline
         </p>
         <p className="text-champagne/60 font-light text-sm">
-          22 · 11 · 2026 · Espaço Elegance Eventos
+          22 · 11 · 2026 · Porto Velho — RO
         </p>
         <div className="flex items-center justify-center gap-3 mt-6">
           <div className="h-px w-16 bg-gold/30" />

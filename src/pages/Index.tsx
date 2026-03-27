@@ -18,7 +18,7 @@ const Index = () => {
       <PetalParticles />
       <WeddingNavigation />
       <HeroSection />
-      <OurStory />
+      
       <EventDetails />
       <RSVPSection />
       <GiftList />
