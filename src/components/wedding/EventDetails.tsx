@@ -41,11 +41,12 @@ export const EventDetails = () => {
             className="relative"
           >
             <div className="overflow-hidden rounded-2xl shadow-card">
-              <img src={venueImg} alt="Espaço Elegance Eventos" className="w-full h-80 object-cover" />
+              <img src={venueImg} alt="Local do evento em Porto Velho" className="w-full h-80 object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-marsala/40 to-transparent rounded-2xl" />
               <div className="absolute bottom-6 left-6 text-card">
-                <p className="font-script text-2xl text-gold">Espaço Elegance Eventos</p>
+                <p className="font-script text-2xl text-gold">Porto Velho — RO</p>
                 <p className="text-sm opacity-80">22 de novembro de 2026</p>
+                <p className="text-xs opacity-60 italic mt-1">Local exato será confirmado em breve</p>
               </div>
             </div>
           </motion.div>
