@@ -45,9 +45,9 @@ export const ContactSection = () => (
           {
             icon: MapPin,
             title: "Local do Evento",
-            content: "Espaço Elegance Eventos\nAv. das Flores, 1500",
-            action: () => window.open("https://maps.google.com", "_blank"),
-            btn: "Ver no mapa",
+            content: "Porto Velho — RO\nLocal exato em breve",
+            action: null,
+            btn: null,
           },
           {
             icon: Heart,
@@ -97,7 +97,7 @@ export const ContactSection = () => (
           Breno & Jaqueline
         </p>
         <p className="text-champagne/60 font-light text-sm">
-          22 · 11 · 2026 · Espaço Elegance Eventos
+          22 · 11 · 2026 · Porto Velho — RO
         </p>
         <div className="flex items-center justify-center gap-3 mt-6">
           <div className="h-px w-16 bg-gold/30" />

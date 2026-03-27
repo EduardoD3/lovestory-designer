@@ -41,11 +41,12 @@ export const EventDetails = () => {
             className="relative"
           >
             <div className="overflow-hidden rounded-2xl shadow-card">
-              <img src={venueImg} alt="Espaço Elegance Eventos" className="w-full h-80 object-cover" />
+              <img src={venueImg} alt="Local do evento em Porto Velho" className="w-full h-80 object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-marsala/40 to-transparent rounded-2xl" />
               <div className="absolute bottom-6 left-6 text-card">
-                <p className="font-script text-2xl text-gold">Espaço Elegance Eventos</p>
+                <p className="font-script text-2xl text-gold">Porto Velho — RO</p>
                 <p className="text-sm opacity-80">22 de novembro de 2026</p>
+                <p className="text-xs opacity-60 italic mt-1">Local exato será confirmado em breve</p>
               </div>
             </div>
           </motion.div>
@@ -62,17 +63,17 @@ export const EventDetails = () => {
               {
                 icon: Clock,
                 title: "Data & Hora",
-                content: "22 de novembro de 2026\nàs 18h00",
+                content: "22 de novembro de 2026\nàs 18h00\n(horário sujeito a confirmação)",
               },
               {
                 icon: MapPin,
                 title: "Local",
-                content: "Espaço Elegance Eventos\nAv. das Flores, 1500 — Jardim Primavera",
+                content: "Porto Velho — RO\nLocal exato será confirmado em breve",
               },
               {
                 icon: Car,
                 title: "Estacionamento",
-                content: "Estacionamento gratuito no local\nManobrista disponível",
+                content: "Informações serão atualizadas junto com o local",
               },
               {
                 icon: Shirt,
@@ -108,16 +109,13 @@ export const EventDetails = () => {
           transition={{ duration: 0.9 }}
           className="mb-16 rounded-2xl overflow-hidden border border-gold/20 shadow-card"
         >
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975!2d-46.6333!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAxLjgiUyA0NsKwMzgnMDAuMCJX!5e0!3m2!1spt-BR!2sbr!4v1699900000000"
-            width="100%"
-            height="320"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Localização do evento"
-          />
+          <div className="flex items-center justify-center h-64 bg-champagne/30">
+            <div className="text-center px-6">
+              <MapPin size={32} className="text-gold mx-auto mb-3" />
+              <p className="font-display text-lg text-marsala mb-2">Porto Velho — RO</p>
+              <p className="text-foreground/60 text-sm italic">O endereço exato será divulgado em breve</p>
+            </div>
+          </div>
         </motion.div>
 
         {/* Agenda */}
