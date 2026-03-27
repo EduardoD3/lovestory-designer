@@ -63,17 +63,17 @@ export const EventDetails = () => {
               {
                 icon: Clock,
                 title: "Data & Hora",
-                content: "22 de novembro de 2026\nàs 18h00",
+                content: "22 de novembro de 2026\nàs 18h00\n(horário sujeito a confirmação)",
               },
               {
                 icon: MapPin,
                 title: "Local",
-                content: "Espaço Elegance Eventos\nAv. das Flores, 1500 — Jardim Primavera",
+                content: "Porto Velho — RO\nLocal exato será confirmado em breve",
               },
               {
                 icon: Car,
                 title: "Estacionamento",
-                content: "Estacionamento gratuito no local\nManobrista disponível",
+                content: "Informações serão atualizadas junto com o local",
               },
               {
                 icon: Shirt,
