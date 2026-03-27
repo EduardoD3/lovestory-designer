@@ -1,6 +1,6 @@
 import { WeddingNavigation } from "@/components/wedding/WeddingNavigation";
 import { HeroSection } from "@/components/wedding/HeroSection";
-
+import { OurStory } from "@/components/wedding/OurStory";
 import { EventDetails } from "@/components/wedding/EventDetails";
 import { RSVPSection } from "@/components/wedding/RSVPSection";
 import { GiftList } from "@/components/wedding/GiftList";
