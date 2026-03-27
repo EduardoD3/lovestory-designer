@@ -45,9 +45,9 @@ export const ContactSection = () => (
           {
             icon: MapPin,
             title: "Local do Evento",
-            content: "Espaço Elegance Eventos\nAv. das Flores, 1500",
-            action: () => window.open("https://maps.google.com", "_blank"),
-            btn: "Ver no mapa",
+            content: "Porto Velho — RO\nLocal exato em breve",
+            action: null,
+            btn: null,
           },
           {
             icon: Heart,
