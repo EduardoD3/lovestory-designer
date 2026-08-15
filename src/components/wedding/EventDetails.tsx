@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { MapPin, Clock, Car, Shirt, Music, Heart, Star } from "lucide-react";
+import { MapPin, Clock, Car, Shirt, Music, Heart, Star, Navigation, CalendarPlus } from "lucide-react";
 import venueImg from "@/assets/venue.jpg";
 
 const agenda = [
