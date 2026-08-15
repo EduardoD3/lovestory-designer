@@ -34,14 +34,14 @@ export const HeroSection = () => {
         src={floralCorner}
         alt=""
         aria-hidden
-        className="absolute top-0 left-0 w-48 md:w-72 opacity-80 pointer-events-none"
+        className="absolute top-0 left-0 w-28 md:w-64 opacity-70 pointer-events-none"
         style={{ filter: "drop-shadow(0 4px 8px rgba(0,0,0,0.1))" }}
       />
       <img
         src={floralCorner}
         alt=""
         aria-hidden
-        className="absolute bottom-0 right-0 w-48 md:w-72 opacity-80 pointer-events-none"
+        className="absolute bottom-0 right-0 w-28 md:w-64 opacity-70 pointer-events-none"
         style={{
           transform: "rotate(180deg)",
           filter: "drop-shadow(0 4px 8px rgba(0,0,0,0.1))",

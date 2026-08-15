@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 export const HeroSlideshow = ({ images }: { images: string[] }) => {
   const [index, setIndex] = useState(0);
@@ -11,17 +11,16 @@ export const HeroSlideshow = ({ images }: { images: string[] }) => {
 
   return (
     <div className="absolute inset-0 overflow-hidden">
-      <AnimatePresence mode="sync">
+      {images.map((src, i) => (
         <motion.div
-          key={index}
-          initial={{ opacity: 0, scale: 1.12 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ opacity: { duration: 2, ease: "easeInOut" }, scale: { duration: 7, ease: "linear" } }}
+          key={src}
+          initial={false}
+          animate={{ opacity: i === index ? 1 : 0, scale: i === index ? 1 : 1.1 }}
+          transition={{ opacity: { duration: 2, ease: "easeInOut" }, scale: { duration: 8, ease: "linear" } }}
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${images[index]})` }}
+          style={{ backgroundImage: `url(${src})` }}
         />
-      </AnimatePresence>
+      ))}
     </div>
   );
 };
