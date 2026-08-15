@@ -63,7 +63,7 @@ export const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 0.5 }}
-          className="font-display text-6xl md:text-8xl lg:text-9xl font-light text-card tracking-wide mb-2"
+          className="font-display text-7xl md:text-9xl lg:text-[10rem] font-light text-card tracking-wide leading-[0.95] drop-shadow-lg"
         >
           Breno
         </motion.h1>
@@ -72,7 +72,7 @@ export const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.9 }}
-          className="font-script text-4xl md:text-5xl text-gold my-1"
+          className="font-script text-5xl md:text-6xl text-gold my-2"
         >
           &amp;
         </motion.p>
@@ -81,7 +81,7 @@ export const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 1.1 }}
-          className="font-display text-6xl md:text-8xl lg:text-9xl font-light text-card tracking-wide mb-4"
+          className="font-display text-7xl md:text-9xl lg:text-[10rem] font-light text-card tracking-wide leading-[0.95] mb-6 drop-shadow-lg"
         >
           Jaqueline
         </motion.h1>
@@ -90,10 +90,11 @@ export const HeroSection = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.3 }}
-          className="font-script text-xl md:text-2xl text-gold/80 mb-6"
+          className="text-card/85 font-light text-base md:text-lg max-w-2xl mx-auto leading-relaxed mb-8"
         >
-          Um novo capítulo da nossa história começa aqui
+          Depois de tantas histórias vividas, chegou o momento de escrevermos o capítulo mais importante das nossas vidas.
         </motion.p>
+
 
         <motion.div
           initial={{ opacity: 0 }}
