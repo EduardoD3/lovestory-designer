@@ -26,7 +26,7 @@ export const HeroSection = () => {
       <HeroSlideshow images={slides} />
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-hero" />
-      <div className="absolute inset-0 bg-foreground/35" />
+      <div className="absolute inset-0 bg-foreground/25" />
 
 
       {/* Floral corners */}
@@ -49,12 +49,12 @@ export const HeroSection = () => {
       />
 
       {/* Content */}
-      <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
+      <div className="relative z-20 text-center px-6 max-w-4xl mx-auto py-28 md:py-24">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="font-script text-2xl md:text-3xl text-gold mb-4"
+          className="font-script text-xl md:text-3xl text-gold mb-4 px-8"
         >
           Com alegria, convidamos você para celebrar o nosso casamento
         </motion.p>
@@ -63,7 +63,7 @@ export const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 0.5 }}
-          className="font-display text-7xl md:text-9xl lg:text-[10rem] font-light text-card tracking-wide leading-[0.95] drop-shadow-lg"
+          className="font-display text-6xl md:text-8xl lg:text-9xl font-light text-card tracking-wide leading-[0.95] drop-shadow-lg"
         >
           Breno
         </motion.h1>
@@ -81,7 +81,7 @@ export const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 1.1 }}
-          className="font-display text-7xl md:text-9xl lg:text-[10rem] font-light text-card tracking-wide leading-[0.95] mb-6 drop-shadow-lg"
+          className="font-display text-6xl md:text-8xl lg:text-9xl font-light text-card tracking-wide leading-[0.95] mb-6 drop-shadow-lg"
         >
           Jaqueline
         </motion.h1>
