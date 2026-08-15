@@ -101,22 +101,44 @@ export const EventDetails = () => {
           </motion.div>
         </div>
 
-        {/* Google Maps embed */}
+        {/* Ações rápidas */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.9 }}
-          className="mb-16 rounded-2xl overflow-hidden border border-gold/20 shadow-card"
+          className="mb-16 grid sm:grid-cols-3 gap-4"
         >
-          <div className="flex items-center justify-center h-64 bg-champagne/30">
-            <div className="text-center px-6">
-              <MapPin size={32} className="text-gold mx-auto mb-3" />
-              <p className="font-display text-lg text-marsala mb-2">Porto Velho — RO</p>
-              <p className="text-foreground/60 text-sm italic">O endereço exato será divulgado em breve</p>
-            </div>
-          </div>
+          {[
+            {
+              icon: MapPin,
+              label: "Abrir no Google Maps",
+              href: "https://www.google.com/maps/search/?api=1&query=Porto+Velho+RO",
+            },
+            {
+              icon: Navigation,
+              label: "Traçar rota no Waze",
+              href: "https://waze.com/ul?q=Porto%20Velho%20RO&navigate=yes",
+            },
+            {
+              icon: CalendarPlus,
+              label: "Adicionar ao calendário",
+              href: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Casamento%20Breno%20%26%20Jaqueline&dates=20261122T220000Z/20261123T040000Z&details=Com%20alegria%20convidamos%20voc%C3%AA%20para%20celebrar%20o%20nosso%20casamento.&location=Porto%20Velho%20-%20RO",
+            },
+          ].map((action, i) => (
+            <a
+              key={i}
+              href={action.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-3 min-h-14 px-6 py-4 rounded-full border border-gold/30 bg-champagne/20 text-marsala text-xs uppercase tracking-widest hover:bg-gold hover:text-card hover:border-gold transition-all duration-300"
+            >
+              <action.icon size={16} />
+              {action.label}
+            </a>
+          ))}
         </motion.div>
+
 
         {/* Agenda */}
         <motion.div
