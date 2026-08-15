@@ -1,7 +1,15 @@
 import { motion } from "framer-motion";
 import coupleHero from "@/assets/couple-hero.jpg";
+import gallery1 from "@/assets/gallery-1.jpg";
+import gallery2 from "@/assets/gallery-2.jpg";
+import gallery3 from "@/assets/gallery-3.jpg";
+import story1 from "@/assets/story-1.jpg";
+import story2 from "@/assets/story-2.jpg";
 import floralCorner from "@/assets/floral-corner.png";
 import { CountdownTimer } from "./CountdownTimer";
+import { HeroSlideshow } from "./HeroSlideshow";
+
+const slides = [coupleHero, gallery1, story1, gallery2, story2, gallery3];
 
 export const HeroSection = () => {
   const scrollTo = (href: string) => {
@@ -14,13 +22,12 @@ export const HeroSection = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${coupleHero})` }}
-      />
+      {/* Background slideshow */}
+      <HeroSlideshow images={slides} />
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-hero" />
+      <div className="absolute inset-0 bg-foreground/35" />
+
 
       {/* Floral corners */}
       <img
