@@ -1,7 +1,15 @@
 import { motion } from "framer-motion";
 import coupleHero from "@/assets/couple-hero.jpg";
+import gallery1 from "@/assets/gallery-1.jpg";
+import gallery2 from "@/assets/gallery-2.jpg";
+import gallery3 from "@/assets/gallery-3.jpg";
+import story1 from "@/assets/story-1.jpg";
+import story2 from "@/assets/story-2.jpg";
 import floralCorner from "@/assets/floral-corner.png";
 import { CountdownTimer } from "./CountdownTimer";
+import { HeroSlideshow } from "./HeroSlideshow";
+
+const slides = [coupleHero, gallery1, story1, gallery2, story2, gallery3];
 
 export const HeroSection = () => {
   const scrollTo = (href: string) => {
@@ -14,27 +22,26 @@ export const HeroSection = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${coupleHero})` }}
-      />
+      {/* Background slideshow */}
+      <HeroSlideshow images={slides} />
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-hero" />
+      <div className="absolute inset-0 bg-foreground/25" />
+
 
       {/* Floral corners */}
       <img
         src={floralCorner}
         alt=""
         aria-hidden
-        className="absolute top-0 left-0 w-48 md:w-72 opacity-80 pointer-events-none"
+        className="absolute top-0 left-0 w-28 md:w-64 opacity-70 pointer-events-none"
         style={{ filter: "drop-shadow(0 4px 8px rgba(0,0,0,0.1))" }}
       />
       <img
         src={floralCorner}
         alt=""
         aria-hidden
-        className="absolute bottom-0 right-0 w-48 md:w-72 opacity-80 pointer-events-none"
+        className="absolute bottom-0 right-0 w-28 md:w-64 opacity-70 pointer-events-none"
         style={{
           transform: "rotate(180deg)",
           filter: "drop-shadow(0 4px 8px rgba(0,0,0,0.1))",
@@ -42,12 +49,12 @@ export const HeroSection = () => {
       />
 
       {/* Content */}
-      <div className="relative z-20 text-center px-6 max-w-4xl mx-auto">
+      <div className="relative z-20 text-center px-6 max-w-4xl mx-auto py-28 md:py-24">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
-          className="font-script text-2xl md:text-3xl text-gold mb-4"
+          className="font-script text-xl md:text-3xl text-gold mb-4 px-8"
         >
           Com alegria, convidamos você para celebrar o nosso casamento
         </motion.p>
@@ -56,7 +63,7 @@ export const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 0.5 }}
-          className="font-display text-6xl md:text-8xl lg:text-9xl font-light text-card tracking-wide mb-2"
+          className="font-display text-6xl md:text-8xl lg:text-9xl font-light text-card tracking-wide leading-[0.95] drop-shadow-lg"
         >
           Breno
         </motion.h1>
@@ -65,7 +72,7 @@ export const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.9 }}
-          className="font-script text-4xl md:text-5xl text-gold my-1"
+          className="font-script text-5xl md:text-6xl text-gold my-2"
         >
           &amp;
         </motion.p>
@@ -74,7 +81,7 @@ export const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, delay: 1.1 }}
-          className="font-display text-6xl md:text-8xl lg:text-9xl font-light text-card tracking-wide mb-4"
+          className="font-display text-6xl md:text-8xl lg:text-9xl font-light text-card tracking-wide leading-[0.95] mb-6 drop-shadow-lg"
         >
           Jaqueline
         </motion.h1>
@@ -83,10 +90,11 @@ export const HeroSection = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.3 }}
-          className="font-script text-xl md:text-2xl text-gold/80 mb-6"
+          className="text-card/85 font-light text-base md:text-lg max-w-2xl mx-auto leading-relaxed mb-8"
         >
-          Um novo capítulo da nossa história começa aqui
+          Depois de tantas histórias vividas, chegou o momento de escrevermos o capítulo mais importante das nossas vidas.
         </motion.p>
+
 
         <motion.div
           initial={{ opacity: 0 }}
@@ -152,10 +160,11 @@ export const HeroSection = () => {
           </button>
           <button
             onClick={() => scrollTo("#evento")}
-            className="border border-card/40 text-card text-sm uppercase tracking-widest px-8 py-4 rounded-full hover:border-gold hover:text-gold transition-all duration-300"
+            className="text-card/70 text-xs uppercase tracking-widest px-4 py-3 hover:text-gold transition-colors duration-300"
           >
             Mais informações
           </button>
+
         </motion.div>
 
         {/* Scroll indicator */}

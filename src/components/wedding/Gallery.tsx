@@ -41,7 +41,7 @@ export const Gallery = () => {
         </motion.div>
 
         {/* Masonry-style grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 auto-rows-[200px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 auto-rows-[240px] md:auto-rows-[260px]">
           {images.map((img, i) => (
             <motion.div
               key={i}
