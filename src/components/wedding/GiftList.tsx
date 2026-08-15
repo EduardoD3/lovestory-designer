@@ -154,10 +154,13 @@ export const GiftList = () => {
           <p className="text-gold/80 mt-5 font-light text-sm uppercase tracking-widest">
             Cada gesto será recebido com muito amor.
           </p>
-          <p className="text-foreground/60 mt-6 font-light max-w-xl mx-auto leading-relaxed">
-            Sua presença já é o nosso maior presente 💛<br />
-            Mas, se desejar nos abençoar de outra forma, preparamos algumas sugestões com muito carinho para esse novo capítulo das nossas vidas.
+          <p className="text-foreground/70 mt-6 font-light max-w-2xl mx-auto leading-relaxed italic">
+            “Cada presente representa uma contribuição para construirmos nossa nova vida juntos. Seja para nossa lua de mel, para o nosso lar ou para novos sonhos, agradecemos imensamente por fazer parte deste momento.”
           </p>
+          <p className="text-foreground/60 mt-4 font-light max-w-xl mx-auto leading-relaxed">
+            Sua presença já é o nosso maior presente 💛
+          </p>
+
         </motion.div>
 
         {/* PIX info */}

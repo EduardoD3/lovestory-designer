@@ -160,10 +160,11 @@ export const HeroSection = () => {
           </button>
           <button
             onClick={() => scrollTo("#evento")}
-            className="border border-card/40 text-card text-sm uppercase tracking-widest px-8 py-4 rounded-full hover:border-gold hover:text-gold transition-all duration-300"
+            className="text-card/70 text-xs uppercase tracking-widest px-4 py-3 hover:text-gold transition-colors duration-300"
           >
             Mais informações
           </button>
+
         </motion.div>
 
         {/* Scroll indicator */}
