@@ -1,21 +1,13 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import story1 from "@/assets/story-1.jpg";
-import story2 from "@/assets/story-2.jpg";
-import coupleHero from "@/assets/couple-hero.jpg";
+import { weddingPhotos } from "@/assets/casamento";
 
-const images = [
-  { src: gallery1, alt: "Noivos no jardim", span: "row-span-1 col-span-1" },
-  { src: gallery2, alt: "Passeio romântico", span: "row-span-2 col-span-1" },
-  { src: gallery3, alt: "Risadas do casal", span: "row-span-1 col-span-1" },
-  { src: story2, alt: "O pedido", span: "row-span-1 col-span-1" },
-  { src: story1, alt: "Primeiro encontro", span: "row-span-1 col-span-1" },
-  { src: coupleHero, alt: "Ao entardecer", span: "row-span-1 col-span-1" },
-];
+const images = weddingPhotos.map((src, i) => ({
+  src,
+  alt: `Ensaio de Breno e Jaqueline — foto ${i + 1}`,
+}));
+
 
 export const Gallery = () => {
   const [lightbox, setLightbox] = useState<number | null>(null);
