@@ -1,26 +1,26 @@
-import foto1 from "./foto-1.jpg.asset.json";
-import foto2 from "./foto-2.jpg.asset.json";
-import foto3 from "./foto-3.jpg.asset.json";
-import foto4 from "./foto-4.jpg.asset.json";
-import foto5 from "./foto-5.jpg.asset.json";
-import foto6 from "./foto-6.jpg.asset.json";
-import foto7 from "./foto-7.jpg.asset.json";
-import foto8 from "./foto-8.jpg.asset.json";
-import foto9 from "./foto-9.jpg.asset.json";
-import foto10 from "./foto-10.jpg.asset.json";
+import foto1 from "./foto-1.jpg";
+import foto2 from "./foto-2.jpg";
+import foto3 from "./foto-3.jpg";
+import foto4 from "./foto-4.jpg";
+import foto5 from "./foto-5.jpg";
+import foto6 from "./foto-6.jpg";
+import foto7 from "./foto-7.jpg";
+import foto8 from "./foto-8.jpg";
+import foto9 from "./foto-9.jpg";
+import foto10 from "./foto-10.jpg";
 
 export const weddingPhotos = [
-  foto1.url,
-  foto2.url,
-  foto3.url,
-  foto4.url,
-  foto5.url,
-  foto6.url,
-  foto7.url,
-  foto8.url,
-  foto9.url,
-  foto10.url,
+  foto1,
+  foto2,
+  foto3,
+  foto4,
+  foto5,
+  foto6,
+  foto7,
+  foto8,
+  foto9,
+  foto10,
 ];
 
 // Fotos em orientação paisagem — melhores para fundos largos
-export const weddingPhotosLandscape = [foto3.url, foto8.url, foto9.url];
+export const weddingPhotosLandscape = [foto3, foto8, foto9];
