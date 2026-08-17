@@ -1,17 +1,17 @@
 import { motion } from "framer-motion";
 
 const padrinhos = [
-  { name: "Carlos Eduardo", role: "Padrinho do Noivo" },
-  { name: "Rodrigo Almeida", role: "Padrinho do Noivo" },
-  { name: "Felipe Santos", role: "Padrinho do Noivo" },
-  { name: "Lucas Ferreira", role: "Padrinho do Noivo" },
+  { name: "Levi", role: "Padrinho" },
+  { name: "Bruno", role: "Padrinho" },
+  { name: "Andrey", role: "Padrinho" },
+  { name: "Maike", role: "Padrinho" },
 ];
 
 const madrinhas = [
-  { name: "Ana Paula", role: "Madrinha da Noiva" },
-  { name: "Camila Oliveira", role: "Madrinha da Noiva" },
-  { name: "Mariana Costa", role: "Madrinha da Noiva" },
-  { name: "Beatriz Lima", role: "Madrinha da Noiva" },
+  { name: "Duda", role: "Madrinha" },
+  { name: "Géssica", role: "Madrinha" },
+  { name: "Niorrana", role: "Madrinha" },
+  { name: "M. Socorro", role: "Madrinha" },
 ];
 
 const PartyCard = ({ person, index }: { person: { name: string; role: string }; index: number }) => (
