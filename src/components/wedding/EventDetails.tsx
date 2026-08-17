@@ -63,22 +63,22 @@ export const EventDetails = () => {
               {
                 icon: Clock,
                 title: "Data & Hora",
-                content: "22 de novembro de 2026\nàs 18h00\n(horário sujeito a confirmação)",
+                content: "22 de novembro de 2026\nàs 18h00",
               },
               {
                 icon: MapPin,
                 title: "Local",
-                content: "Porto Velho — RO\nLocal exato será confirmado em breve",
+                content: "Elegance Eventos\nPorto Velho — RO",
               },
               {
                 icon: Car,
                 title: "Estacionamento",
-                content: "Informações serão atualizadas junto com o local",
+                content: "Estacionamento disponível no local",
               },
               {
                 icon: Shirt,
                 title: "Dress Code",
-                content: "Traje a rigor\nHomens: terno escuro · Mulheres: longo ou midi",
+                content: "Traje a rigor\nHomens: terno escuro · Mulheres: longo ou midi\nPedimos que não sejam utilizadas as cores branco ou marsala.",
               },
             ].map((item, i) => (
               <motion.div
