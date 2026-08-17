@@ -113,17 +113,17 @@ export const EventDetails = () => {
             {
               icon: MapPin,
               label: "Abrir no Google Maps",
-              href: "https://www.google.com/maps/search/?api=1&query=Porto+Velho+RO",
+              href: "https://www.google.com/maps/search/?api=1&query=Elegance+Eventos+Porto+Velho+RO",
             },
             {
               icon: Navigation,
               label: "Traçar rota no Waze",
-              href: "https://waze.com/ul?q=Porto%20Velho%20RO&navigate=yes",
+              href: "https://waze.com/ul?q=Elegance%20Eventos%20Porto%20Velho%20RO&navigate=yes",
             },
             {
               icon: CalendarPlus,
               label: "Adicionar ao calendário",
-              href: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Casamento%20Breno%20%26%20Jaqueline&dates=20261122T220000Z/20261123T040000Z&details=Com%20alegria%20convidamos%20voc%C3%AA%20para%20celebrar%20o%20nosso%20casamento.&location=Porto%20Velho%20-%20RO",
+              href: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Casamento%20Breno%20%26%20Jaqueline&dates=20261122T220000Z/20261123T040000Z&details=Com%20alegria%20convidamos%20voc%C3%AA%20para%20celebrar%20o%20nosso%20casamento.&location=Elegance%20Eventos%20-%20Porto%20Velho%20-%20RO",
             },
           ].map((action, i) => (
             <a
