@@ -41,12 +41,12 @@ export const EventDetails = () => {
             className="relative"
           >
             <div className="overflow-hidden rounded-2xl shadow-card">
-              <img src={venueImg} alt="Local do evento em Porto Velho" className="w-full h-80 object-cover" />
+              <img src={venueImg} alt="Elegance Eventos, local do casamento em Porto Velho" className="w-full h-80 object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-marsala/40 to-transparent rounded-2xl" />
               <div className="absolute bottom-6 left-6 text-card">
-                <p className="font-script text-2xl text-gold">Porto Velho — RO</p>
-                <p className="text-sm opacity-80">22 de novembro de 2026</p>
-                <p className="text-xs opacity-60 italic mt-1">Local exato será confirmado em breve</p>
+                <p className="font-script text-2xl text-gold">Elegance Eventos</p>
+                <p className="text-sm opacity-80">Porto Velho — RO</p>
+                <p className="text-xs opacity-70 mt-1">22 de novembro de 2026</p>
               </div>
             </div>
           </motion.div>
@@ -63,22 +63,22 @@ export const EventDetails = () => {
               {
                 icon: Clock,
                 title: "Data & Hora",
-                content: "22 de novembro de 2026\nàs 18h00\n(horário sujeito a confirmação)",
+                content: "22 de novembro de 2026\nàs 18h00",
               },
               {
                 icon: MapPin,
                 title: "Local",
-                content: "Porto Velho — RO\nLocal exato será confirmado em breve",
+                content: "Elegance Eventos\nPorto Velho — RO",
               },
               {
                 icon: Car,
                 title: "Estacionamento",
-                content: "Informações serão atualizadas junto com o local",
+                content: "Estacionamento disponível no local",
               },
               {
                 icon: Shirt,
                 title: "Dress Code",
-                content: "Traje a rigor\nHomens: terno escuro · Mulheres: longo ou midi",
+                content: "Traje a rigor\nHomens: terno escuro · Mulheres: longo ou midi\nPedimos que não sejam utilizadas as cores branco ou marsala.",
               },
             ].map((item, i) => (
               <motion.div
@@ -113,17 +113,17 @@ export const EventDetails = () => {
             {
               icon: MapPin,
               label: "Abrir no Google Maps",
-              href: "https://www.google.com/maps/search/?api=1&query=Porto+Velho+RO",
+              href: "https://www.google.com/maps/search/?api=1&query=Elegance+Eventos+Porto+Velho+RO",
             },
             {
               icon: Navigation,
               label: "Traçar rota no Waze",
-              href: "https://waze.com/ul?q=Porto%20Velho%20RO&navigate=yes",
+              href: "https://waze.com/ul?q=Elegance%20Eventos%20Porto%20Velho%20RO&navigate=yes",
             },
             {
               icon: CalendarPlus,
               label: "Adicionar ao calendário",
-              href: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Casamento%20Breno%20%26%20Jaqueline&dates=20261122T220000Z/20261123T040000Z&details=Com%20alegria%20convidamos%20voc%C3%AA%20para%20celebrar%20o%20nosso%20casamento.&location=Porto%20Velho%20-%20RO",
+              href: "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Casamento%20Breno%20%26%20Jaqueline&dates=20261122T220000Z/20261123T040000Z&details=Com%20alegria%20convidamos%20voc%C3%AA%20para%20celebrar%20o%20nosso%20casamento.&location=Elegance%20Eventos%20-%20Porto%20Velho%20-%20RO",
             },
           ].map((action, i) => (
             <a

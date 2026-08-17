@@ -38,14 +38,14 @@ export const ContactSection = () => (
           {
             icon: MessageCircle,
             title: "WhatsApp dos Noivos",
-            content: "(00) 99999-9999",
-            action: () => window.open("https://wa.me/5500999999999?text=Olá! Vi o convite do casamento de Breno e Jaqueline.", "_blank"),
+            content: "(69) 98113-4052",
+            action: () => window.open("https://wa.me/5569981134052?text=Olá! Vi o convite do casamento de Breno e Jaqueline.", "_blank"),
             btn: "Enviar mensagem",
           },
           {
             icon: MapPin,
             title: "Local do Evento",
-            content: "Porto Velho — RO\nLocal exato em breve",
+            content: "Elegance Eventos\nPorto Velho — RO",
             action: null,
             btn: null,
           },

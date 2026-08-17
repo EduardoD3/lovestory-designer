@@ -109,17 +109,9 @@ export const HeroSection = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.7 }}
-          className="text-card/70 text-sm tracking-widest uppercase mb-2"
+          className="text-card/70 text-sm tracking-widest uppercase mb-8"
         >
-          Porto Velho — RO · 18h00
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1.8 }}
-          className="text-gold/60 text-xs tracking-wider italic mb-8"
-        >
-          Local e horário exatos serão confirmados em breve
+          Elegance Eventos · Porto Velho — RO · 18h00
         </motion.p>
 
         {/* Countdown */}

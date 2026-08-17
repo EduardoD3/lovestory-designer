@@ -9,11 +9,11 @@ const faqs = [
   },
   {
     q: "Como chegar ao local?",
-    a: "O Espaço Elegance Eventos fica na Av. das Flores, 1500 — Jardim Primavera. Você pode usar Google Maps ou Waze para chegar facilmente. Há estacionamento gratuito no local com serviço de manobrista.",
+    a: "A celebração acontece no Elegance Eventos, em Porto Velho — RO. Você pode usar Google Maps ou Waze para chegar facilmente.",
   },
   {
     q: "Qual traje usar?",
-    a: "O dress code é traje a rigor. Homens: terno escuro (preferência preto ou azul marinho). Mulheres: vestido longo ou midi. Por favor, evite roupas na cor branca.",
+    a: "O dress code é traje a rigor. Homens: terno escuro (preferência preto ou azul marinho). Mulheres: vestido longo ou midi. Pedimos que não sejam utilizadas as cores branco ou marsala.",
   },
   {
     q: "Até quando posso confirmar presença?",
@@ -22,10 +22,6 @@ const faqs = [
   {
     q: "Posso tirar fotos durante a cerimônia?",
     a: "Pedimos gentilmente que durante a cerimônia as fotos sejam feitas pelos fotógrafos contratados. Na festa, sinta-se à vontade para registrar os momentos!",
-  },
-  {
-    q: "Há opções para crianças?",
-    a: "Crianças são bem-vindas! O evento contará com um espaço reservado para os pequenos.",
   },
   {
     q: "Tem restrições alimentares?",
