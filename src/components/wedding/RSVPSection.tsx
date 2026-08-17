@@ -25,6 +25,23 @@ export const RSVPSection = () => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
+  const buildWhatsAppUrl = () => {
+    const linhas = [
+      "Olá! Confirmação de presença — Casamento Breno & Jaqueline (22.11.2026)",
+      "",
+      `Nome: ${form.name.trim()}`,
+      `Telefone: ${form.phone.trim()}`,
+      `Presença: ${form.attending === "sim" ? "Sim, estarei lá! 🎉" : "Não poderei ir"}`,
+    ];
+    if (form.attending === "sim") {
+      linhas.push(`Acompanhantes: ${parseInt(form.guests_count) || 0}`);
+    }
+    if (form.observations.trim()) {
+      linhas.push(`Observações: ${form.observations.trim()}`);
+    }
+    return `https://wa.me/5569981134052?text=${encodeURIComponent(linhas.join("\n"))}`;
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.name.trim() || !form.phone.trim()) {
@@ -47,8 +64,10 @@ export const RSVPSection = () => {
       setError("Ocorreu um erro. Tente novamente.");
     } else {
       setSuccess(true);
+      window.open(buildWhatsAppUrl(), "_blank");
     }
   };
+
 
   return (
     <section id="rsvp" className="relative py-24 overflow-hidden">
