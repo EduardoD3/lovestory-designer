@@ -113,11 +113,18 @@ export const RSVPSection = () => {
               <h3 className="font-display text-2xl text-marsala mb-3">
                 {form.attending === "sim" ? "Até lá! 🎉" : "Obrigado pela resposta"}
               </h3>
-              <p className="text-foreground/70 font-light">
+              <p className="text-foreground/70 font-light mb-6">
                 {form.attending === "sim"
                   ? "Que alegria! Estamos ansiosos para celebrar com você."
                   : "Sentiremos sua falta. Obrigado por nos avisar."}
               </p>
+              <button
+                type="button"
+                onClick={() => window.open(buildWhatsAppUrl(), "_blank")}
+                className="inline-flex items-center gap-2 text-xs uppercase tracking-widest border border-gold/40 text-gold hover:bg-gold hover:text-card transition-all duration-300 px-5 py-2 rounded-full"
+              >
+                Enviar confirmação pelo WhatsApp
+              </button>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-8">
