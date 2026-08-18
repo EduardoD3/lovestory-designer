@@ -64,7 +64,7 @@ export const RSVPSection = () => {
       setError("Ocorreu um erro. Tente novamente.");
     } else {
       setSuccess(true);
-      window.open(buildWhatsAppUrl(), "_blank");
+      window.location.href = buildWhatsAppUrl();
     }
   };
 
