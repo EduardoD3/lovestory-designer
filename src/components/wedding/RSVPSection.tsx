@@ -120,7 +120,7 @@ export const RSVPSection = () => {
               </p>
               <button
                 type="button"
-                onClick={() => window.open(buildWhatsAppUrl(), "_blank")}
+                onClick={() => (window.location.href = buildWhatsAppUrl())}
                 className="inline-flex items-center gap-2 text-xs uppercase tracking-widest border border-gold/40 text-gold hover:bg-gold hover:text-card transition-all duration-300 px-5 py-2 rounded-full"
               >
                 Enviar confirmação pelo WhatsApp
