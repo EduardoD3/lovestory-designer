@@ -44,15 +44,15 @@ const FAQItem = ({ faq, index }: { faq: typeof faqs[0]; index: number }) => {
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between py-5 text-left gap-4 group"
       >
-        <span className="font-display text-base md:text-lg text-marsala group-hover:text-gold transition-colors">
+        <span className="font-display text-lg md:text-xl text-marsala group-hover:text-gold transition-colors">
           {faq.q}
         </span>
         <motion.div
           animate={{ rotate: open ? 180 : 0 }}
           transition={{ duration: 0.3 }}
-          className="flex-shrink-0 w-8 h-8 rounded-full border border-gold/30 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-card transition-all"
+          className="flex-shrink-0 w-9 h-9 rounded-full border border-gold/30 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-card transition-all"
         >
-          <ChevronDown size={16} />
+          <ChevronDown size={18} />
         </motion.div>
       </button>
 
@@ -65,7 +65,7 @@ const FAQItem = ({ faq, index }: { faq: typeof faqs[0]; index: number }) => {
             transition={{ duration: 0.35, ease: "easeInOut" }}
             className="overflow-hidden"
           >
-            <p className="pb-5 text-foreground/65 font-light leading-relaxed text-sm md:text-base">
+            <p className="pb-5 text-foreground/65 font-light leading-relaxed text-base">
               {faq.a}
             </p>
           </motion.div>
