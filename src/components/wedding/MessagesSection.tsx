@@ -57,7 +57,7 @@ export const MessagesSection = () => {
           <h2 className="font-display text-4xl md:text-5xl text-marsala elegant-underline">
             Mensagens para os Noivos
           </h2>
-          <p className="text-foreground/60 mt-8 font-light">
+          <p className="text-foreground/60 mt-8 font-light text-base">
             Deixe uma mensagem especial para Breno & Jaqueline
           </p>
         </motion.div>
@@ -92,19 +92,19 @@ export const MessagesSection = () => {
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-8">
                   <div>
-                    <label className="block text-xs uppercase tracking-widest text-marsala font-medium mb-2">
+                    <label className="block text-sm uppercase tracking-widest text-marsala font-medium mb-2">
                       Seu Nome *
                     </label>
                     <input
                       value={form.name}
                       onChange={(e) => setForm((p) => ({ ...p, name: e.target.value }))}
                       placeholder="Como você se chama?"
-                      className="wedding-input w-full text-sm"
+                      className="wedding-input w-full text-base"
                       required
                     />
                   </div>
                   <div>
-                    <label className="block text-xs uppercase tracking-widest text-marsala font-medium mb-2">
+                    <label className="block text-sm uppercase tracking-widest text-marsala font-medium mb-2">
                       Sua Mensagem *
                     </label>
                     <textarea
@@ -112,19 +112,19 @@ export const MessagesSection = () => {
                       onChange={(e) => setForm((p) => ({ ...p, message: e.target.value }))}
                       placeholder="Escreva uma mensagem com amor..."
                       rows={5}
-                      className="wedding-input w-full text-sm resize-none"
+                      className="wedding-input w-full text-base resize-none"
                       required
                     />
                   </div>
                   <button
                     type="submit"
                     disabled={loading}
-                    className="w-full btn-gold-shimmer text-card text-sm uppercase tracking-widest font-medium py-4 rounded-full flex items-center justify-center gap-3"
+                    className="w-full btn-gold-shimmer text-card text-base uppercase tracking-widest font-medium py-4 rounded-full flex items-center justify-center gap-3"
                   >
                     {loading ? (
-                      <span className="animate-spin w-4 h-4 border-2 border-card/50 border-t-card rounded-full" />
+                      <span className="animate-spin w-5 h-5 border-2 border-card/50 border-t-card rounded-full" />
                     ) : (
-                      <><Send size={14} /> Enviar Mensagem</>
+                      <><Send size={18} /> Enviar Mensagem</>
                     )}
                   </button>
                 </form>
@@ -140,7 +140,7 @@ export const MessagesSection = () => {
             className="space-y-4 max-h-[500px] overflow-y-auto pr-2"
           >
             {messages.length === 0 && (
-              <p className="text-center text-foreground/40 font-light py-12">
+              <p className="text-center text-foreground/40 font-light py-12 text-base">
                 Seja o primeiro a deixar uma mensagem! 💕
               </p>
             )}
@@ -153,13 +153,13 @@ export const MessagesSection = () => {
                 className="p-5 rounded-2xl border border-gold/20 bg-champagne/20 hover:bg-champagne/40 transition-colors"
               >
                 <div className="flex items-center gap-2 mb-2">
-                  <div className="w-8 h-8 rounded-full bg-gradient-gold flex items-center justify-center text-card text-xs font-semibold">
+                  <div className="w-9 h-9 rounded-full bg-gradient-gold flex items-center justify-center text-card text-sm font-semibold">
                     {msg.name.charAt(0).toUpperCase()}
                   </div>
-                  <p className="font-medium text-marsala text-sm">{msg.name}</p>
-                  <Heart size={12} className="text-gold ml-auto" fill="currentColor" />
+                  <p className="font-medium text-marsala text-base">{msg.name}</p>
+                  <Heart size={14} className="text-gold ml-auto" fill="currentColor" />
                 </div>
-                <p className="text-foreground/70 text-sm leading-relaxed font-light italic">
+                <p className="text-foreground/70 text-base leading-relaxed font-light italic">
                   "{msg.message}"
                 </p>
               </motion.div>

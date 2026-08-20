@@ -102,21 +102,21 @@ const CategorySection = ({
             <div className="w-12 h-12 rounded-full bg-gradient-gold flex items-center justify-center">
               <gift.icon size={20} className="text-card" />
             </div>
-            <span className="text-xs uppercase tracking-widest text-gold font-medium bg-gold/10 px-3 py-1 rounded-full">
+            <span className="text-xs sm:text-sm uppercase tracking-widest text-gold font-medium bg-gold/10 px-3 py-1 rounded-full">
               {gift.category}
             </span>
           </div>
 
-          <h3 className="font-display text-lg text-marsala mb-2">{gift.title}</h3>
-          <p className="text-foreground/60 text-sm leading-relaxed mb-4">{gift.description}</p>
+          <h3 className="font-display text-xl text-marsala mb-2">{gift.title}</h3>
+          <p className="text-foreground/60 text-base leading-relaxed mb-4">{gift.description}</p>
 
           <div className="flex items-center justify-between mt-auto">
-            <p className="font-semibold text-marsala text-sm">{gift.value}</p>
+            <p className="font-semibold text-marsala text-base">{gift.value}</p>
             <button
               onClick={() => onContribute(gift)}
-              className="flex items-center gap-2 text-xs uppercase tracking-widest px-4 py-2 rounded-full border border-gold/40 text-gold hover:bg-gold hover:text-card transition-all duration-300"
+              className="flex items-center gap-2 text-sm uppercase tracking-widest px-4 py-2 rounded-full border border-gold/40 text-gold hover:bg-gold hover:text-card transition-all duration-300"
             >
-              {gift.link ? <ExternalLink size={12} /> : <Heart size={12} />}
+              {gift.link ? <ExternalLink size={14} /> : <Heart size={14} />}
               {gift.link ? "Ver" : "Presentear com carinho"}
             </button>
           </div>
@@ -151,13 +151,13 @@ export const GiftList = () => {
           <h2 className="font-display text-4xl md:text-5xl text-marsala elegant-underline">
             Lista de Presentes
           </h2>
-          <p className="text-gold/80 mt-5 font-light text-sm uppercase tracking-widest">
+          <p className="text-gold/80 mt-5 font-light text-sm sm:text-base uppercase tracking-widest">
             Cada gesto será recebido com muito amor.
           </p>
-          <p className="text-foreground/70 mt-6 font-light max-w-2xl mx-auto leading-relaxed italic">
+          <p className="text-foreground/70 mt-6 font-light max-w-2xl mx-auto leading-relaxed italic text-base">
             “Cada presente representa uma contribuição para construirmos nossa nova vida juntos. Seja para nossa lua de mel, para o nosso lar ou para novos sonhos, agradecemos imensamente por fazer parte deste momento.”
           </p>
-          <p className="text-foreground/60 mt-4 font-light max-w-xl mx-auto leading-relaxed">
+          <p className="text-foreground/60 mt-4 font-light max-w-xl mx-auto leading-relaxed text-base">
             Sua presença já é o nosso maior presente 💛
           </p>
 
@@ -171,10 +171,10 @@ export const GiftList = () => {
           transition={{ duration: 0.7 }}
           className="mb-14 p-6 rounded-2xl border border-gold/30 bg-champagne/30 text-center glass-card"
         >
-          <p className="text-xs uppercase tracking-widest text-marsala font-medium mb-2">Chave Pix</p>
-          <p className="font-display text-xl text-foreground">054.053.932-58</p>
-          <p className="text-foreground/60 font-medium text-sm mt-1">Nome: Breno Severo</p>
-          <p className="text-foreground/50 text-sm mt-3 max-w-sm mx-auto leading-relaxed">
+          <p className="text-sm uppercase tracking-widest text-marsala font-medium mb-2">Chave Pix</p>
+          <p className="font-display text-2xl text-foreground">054.053.932-58</p>
+          <p className="text-foreground/60 font-medium text-base mt-1">Nome: Breno Severo</p>
+          <p className="text-foreground/50 text-base mt-3 max-w-sm mx-auto leading-relaxed">
             Você também pode contribuir de forma livre para nos ajudar na construção do nosso novo lar e na realização dos nossos sonhos.
           </p>
         </motion.div>

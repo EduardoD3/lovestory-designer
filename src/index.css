@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Parisienne&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Parisienne&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -75,11 +75,18 @@
 
   html {
     scroll-behavior: smooth;
+    font-size: 16px;
+  }
+
+  @media (max-width: 640px) {
+    html {
+      font-size: 18px;
+    }
   }
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Playfair Display', serif;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -147,7 +154,7 @@
     padding: 8px 2px;
     outline: none;
     transition: border-color 0.3s ease;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Playfair Display', serif;
     color: hsl(var(--foreground));
   }
 

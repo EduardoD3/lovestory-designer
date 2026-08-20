@@ -14,7 +14,6 @@ export default {
       fontFamily: {
         display: ["'Playfair Display'", "serif"],
         script: ["'Parisienne'", "cursive"],
-        body: ["'Inter'", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",

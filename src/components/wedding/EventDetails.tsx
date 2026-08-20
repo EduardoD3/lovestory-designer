@@ -90,11 +90,11 @@ export const EventDetails = () => {
                 className="flex items-start gap-4 p-5 rounded-xl border border-gold/20 bg-champagne/30 hover:border-gold/50 transition-colors"
               >
                 <div className="w-10 h-10 rounded-full bg-gradient-gold flex items-center justify-center flex-shrink-0">
-                  <item.icon size={16} className="text-card" />
+                  <item.icon size={18} className="text-card" />
                 </div>
                 <div>
-                  <p className="font-medium text-marsala text-sm uppercase tracking-wider mb-1">{item.title}</p>
-                  <p className="text-foreground/70 text-sm leading-relaxed whitespace-pre-line">{item.content}</p>
+                  <p className="font-medium text-marsala text-sm sm:text-base uppercase tracking-wider mb-1">{item.title}</p>
+                  <p className="text-foreground/70 text-sm sm:text-base leading-relaxed whitespace-pre-line">{item.content}</p>
                 </div>
               </motion.div>
             ))}
@@ -131,9 +131,9 @@ export const EventDetails = () => {
               href={action.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-3 min-h-14 px-6 py-4 rounded-full border border-gold/30 bg-champagne/20 text-marsala text-xs uppercase tracking-widest hover:bg-gold hover:text-card hover:border-gold transition-all duration-300"
+              className="flex items-center justify-center gap-3 min-h-14 px-6 py-4 rounded-full border border-gold/30 bg-champagne/20 text-marsala text-sm uppercase tracking-widest hover:bg-gold hover:text-card hover:border-gold transition-all duration-300"
             >
-              <action.icon size={16} />
+              <action.icon size={18} />
               {action.label}
             </a>
           ))}
@@ -151,10 +151,10 @@ export const EventDetails = () => {
             <span className="font-script text-gold text-2xl block mb-2">programação</span>
             Agenda do Dia
           </h3>
-          <p className="text-foreground/60 text-center text-sm mb-4 font-light">
+          <p className="text-foreground/60 text-center text-base mb-4 font-light">
             Preparamos cada momento com muito carinho para celebrar esse dia especial com você.
           </p>
-          <p className="text-gold/70 text-center text-xs uppercase tracking-widest mb-10">
+          <p className="text-gold/70 text-center text-sm uppercase tracking-widest mb-10">
             Horários sujeitos a pequenos ajustes
           </p>
 
@@ -170,8 +170,8 @@ export const EventDetails = () => {
               >
                 <p className="font-display text-2xl text-gold font-semibold mb-2">{item.time}</p>
                 <div className="h-px w-8 bg-gradient-gold mx-auto mb-3" />
-                <p className="font-display text-base text-marsala mb-1">{item.label}</p>
-                <p className="text-foreground/60 text-sm">{item.description}</p>
+                <p className="font-display text-lg text-marsala mb-1">{item.label}</p>
+                <p className="text-foreground/60 text-base">{item.description}</p>
               </motion.div>
             ))}
           </div>
