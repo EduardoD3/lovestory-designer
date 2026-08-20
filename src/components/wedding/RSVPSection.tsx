@@ -89,7 +89,7 @@ export const RSVPSection = () => {
           <h2 className="font-display text-4xl md:text-5xl text-marsala elegant-underline">
             Confirme sua Presença
           </h2>
-          <p className="text-foreground/60 mt-8 font-light">
+          <p className="text-foreground/60 mt-8 font-light text-base">
             Confirme até <strong>15 de outubro de 2026</strong>
           </p>
         </motion.div>
@@ -113,7 +113,7 @@ export const RSVPSection = () => {
               <h3 className="font-display text-2xl text-marsala mb-3">
                 {form.attending === "sim" ? "Até lá! 🎉" : "Obrigado pela resposta"}
               </h3>
-              <p className="text-foreground/70 font-light mb-6">
+              <p className="text-foreground/70 font-light mb-6 text-base">
                 {form.attending === "sim"
                   ? "Que alegria! Estamos ansiosos para celebrar com você."
                   : "Sentiremos sua falta. Obrigado por nos avisar."}
@@ -121,7 +121,7 @@ export const RSVPSection = () => {
               <button
                 type="button"
                 onClick={() => (window.location.href = buildWhatsAppUrl())}
-                className="inline-flex items-center gap-2 text-xs uppercase tracking-widest border border-gold/40 text-gold hover:bg-gold hover:text-card transition-all duration-300 px-5 py-2 rounded-full"
+                className="inline-flex items-center gap-2 text-sm uppercase tracking-widest border border-gold/40 text-gold hover:bg-gold hover:text-card transition-all duration-300 px-5 py-3 rounded-full"
               >
                 Enviar confirmação pelo WhatsApp
               </button>
@@ -130,7 +130,7 @@ export const RSVPSection = () => {
             <form onSubmit={handleSubmit} className="space-y-8">
               {/* Name */}
               <div>
-                <label className="block text-xs uppercase tracking-widest text-marsala font-medium mb-2">
+                <label className="block text-sm uppercase tracking-widest text-marsala font-medium mb-2">
                   Nome Completo *
                 </label>
                 <input
@@ -138,14 +138,14 @@ export const RSVPSection = () => {
                   value={form.name}
                   onChange={handleChange}
                   placeholder="Seu nome"
-                  className="wedding-input w-full text-sm"
+                  className="wedding-input w-full text-base"
                   required
                 />
               </div>
 
               {/* Phone */}
               <div>
-                <label className="block text-xs uppercase tracking-widest text-marsala font-medium mb-2">
+                <label className="block text-sm uppercase tracking-widest text-marsala font-medium mb-2">
                   WhatsApp / Telefone *
                 </label>
                 <input
@@ -153,14 +153,14 @@ export const RSVPSection = () => {
                   value={form.phone}
                   onChange={handleChange}
                   placeholder="(00) 00000-0000"
-                  className="wedding-input w-full text-sm"
+                  className="wedding-input w-full text-base"
                   required
                 />
               </div>
 
               {/* Attending */}
               <div>
-                <label className="block text-xs uppercase tracking-widest text-marsala font-medium mb-4">
+                <label className="block text-sm uppercase tracking-widest text-marsala font-medium mb-4">
                   Você vai comparecer? *
                 </label>
                 <div className="flex gap-4">
@@ -169,7 +169,7 @@ export const RSVPSection = () => {
                       key={opt}
                       type="button"
                       onClick={() => setForm((p) => ({ ...p, attending: opt }))}
-                      className={`flex-1 py-3 rounded-full border text-sm uppercase tracking-widest transition-all duration-300 ${
+                      className={`flex-1 py-3 rounded-full border text-sm md:text-base uppercase tracking-widest transition-all duration-300 ${
                         form.attending === opt
                           ? "bg-gradient-gold border-gold text-card shadow-gold"
                           : "border-gold/30 text-foreground/60 hover:border-gold/60"
@@ -184,14 +184,14 @@ export const RSVPSection = () => {
               {/* Guests count */}
               {form.attending === "sim" && (
                 <div>
-                  <label className="block text-xs uppercase tracking-widest text-marsala font-medium mb-2">
+                  <label className="block text-sm uppercase tracking-widest text-marsala font-medium mb-2">
                     Acompanhantes (além de você)
                   </label>
                   <select
                     name="guests_count"
                     value={form.guests_count}
                     onChange={handleChange}
-                    className="wedding-input w-full text-sm bg-transparent"
+                    className="wedding-input w-full text-base bg-transparent"
                   >
                     {[0, 1, 2, 3, 4].map((n) => (
                       <option key={n} value={n}>
@@ -204,7 +204,7 @@ export const RSVPSection = () => {
 
               {/* Observations */}
               <div>
-                <label className="block text-xs uppercase tracking-widest text-marsala font-medium mb-2">
+                <label className="block text-sm uppercase tracking-widest text-marsala font-medium mb-2">
                   Observações (opcional)
                 </label>
                 <textarea
@@ -213,24 +213,24 @@ export const RSVPSection = () => {
                   onChange={handleChange}
                   placeholder="Restrição alimentar, necessidade especial..."
                   rows={3}
-                  className="wedding-input w-full text-sm resize-none"
+                  className="wedding-input w-full text-base resize-none"
                 />
               </div>
 
               {error && (
-                <p className="text-red-500 text-sm text-center">{error}</p>
+                <p className="text-red-500 text-base text-center">{error}</p>
               )}
 
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full btn-gold-shimmer text-card text-sm uppercase tracking-widest font-medium py-4 rounded-full flex items-center justify-center gap-3 disabled:opacity-60"
+                className="w-full btn-gold-shimmer text-card text-base uppercase tracking-widest font-medium py-4 rounded-full flex items-center justify-center gap-3 disabled:opacity-60"
               >
                 {loading ? (
                   <span className="animate-spin w-5 h-5 border-2 border-card/50 border-t-card rounded-full" />
                 ) : (
                   <>
-                    <Send size={16} />
+                    <Send size={18} />
                     Confirmar Presença
                   </>
                 )}
