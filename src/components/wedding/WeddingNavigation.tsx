@@ -54,7 +54,7 @@ export const WeddingNavigation = () => {
               <button
                 key={link.href}
                 onClick={() => scrollTo(link.href)}
-                className={`text-xs uppercase tracking-widest font-body font-medium transition-colors duration-200 hover:text-gold ${
+                className={`text-xs uppercase tracking-widest font-display font-medium transition-colors duration-200 hover:text-gold ${
                   scrolled ? "text-foreground" : "text-card"
                 }`}
               >
