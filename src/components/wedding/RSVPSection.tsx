@@ -39,7 +39,7 @@ export const RSVPSection = () => {
     if (form.observations.trim()) {
       linhas.push(`Observações: ${form.observations.trim()}`);
     }
-    return `https://wa.me/5569981134052?text=${encodeURIComponent(linhas.join("\n"))}`;
+    return `https://wa.me/556981095509?text=${encodeURIComponent(linhas.join("\n"))}`;
   };
 
   const handleSubmit = async (e: React.FormEvent) => {

@@ -38,8 +38,8 @@ export const ContactSection = () => (
           {
             icon: MessageCircle,
             title: "WhatsApp dos Noivos",
-            content: "(69) 98113-4052",
-            action: () => window.open("https://wa.me/5569981134052?text=Olá! Vi o convite do casamento de Breno e Jaqueline.", "_blank"),
+            content: "(69) 98109-5509",
+            action: () => window.open("https://wa.me/556981095509?text=Olá! Vi o convite do casamento de Breno e Jaqueline.", "_blank"),
             btn: "Enviar mensagem",
           },
           {
