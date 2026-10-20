@@ -78,7 +78,7 @@ export const EventDetails = () => {
               {
                 icon: Shirt,
                 title: "Dress Code",
-                content: "Traje a rigor\nHomens: terno escuro · Mulheres: longo ou midi\nPedimos que não sejam utilizadas as cores branco ou marsala.",
+                content: "Traje a rigor\nHomens: terno preto · Mulheres: longo ou midi\nPedimos que não sejam utilizadas as cores branco ou marsala.",
               },
             ].map((item, i) => (
               <motion.div

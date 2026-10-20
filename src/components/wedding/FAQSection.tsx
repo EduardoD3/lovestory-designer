@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     q: "Qual traje usar?",
-    a: "O dress code é traje a rigor. Homens: terno escuro (preferência preto ou azul marinho). Mulheres: vestido longo ou midi. Pedimos que não sejam utilizadas as cores branco ou marsala.",
+    a: "O dress code é traje a rigor. Homens: terno preto. Mulheres: vestido longo ou midi. Pedimos que não sejam utilizadas as cores branco ou marsala.",
   },
   {
     q: "Até quando posso confirmar presença?",
