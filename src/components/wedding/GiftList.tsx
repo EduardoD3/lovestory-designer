@@ -69,6 +69,17 @@ const experiencias: GiftItem[] = [
   },
 ];
 
+const presentesFisicos: GiftItem[] = [
+  {
+    icon: Home,
+    category: "presente físico 🎁",
+    title: "Lista da Havan",
+    description: "Escolha um presente na nossa lista da Havan. Também aceitamos presentes físicos na loja!",
+    value: "Lista oficial",
+    link: "https://lista.havan.com.br/Convidado/ItensListaPresente/961495",
+  },
+];
+
 const CategorySection = ({
   title,
   gifts,
