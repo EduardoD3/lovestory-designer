@@ -15,6 +15,9 @@ export const RSVPSection = () => {
     phone: "",
     attending: "sim",
     guests_count: "0",
+    guest_names: "",
+    children: "nao",
+    children_ages: "",
     observations: "",
   });
   const [loading, setLoading] = useState(false);
@@ -35,6 +38,12 @@ export const RSVPSection = () => {
     ];
     if (form.attending === "sim") {
       linhas.push(`Acompanhantes: ${parseInt(form.guests_count) || 0}`);
+      if (form.guest_names.trim()) {
+        linhas.push(`Nome(s) do(s) acompanhante(s): ${form.guest_names.trim()}`);
+      }
+      linhas.push(
+        `Crianças/Filhos: ${form.children === "sim" ? `Sim — ${form.children_ages.trim()}` : "Não"}`
+      );
     }
     if (form.observations.trim()) {
       linhas.push(`Observações: ${form.observations.trim()}`);
@@ -48,6 +57,10 @@ export const RSVPSection = () => {
       setError("Por favor, preencha seu nome e telefone.");
       return;
     }
+    if (form.attending === "sim" && form.guests_count !== "0" && !form.guest_names.trim()) {
+      setError("Por favor, informe o nome do(s) acompanhante(s).");
+      return;
+    }
     setLoading(true);
     setError("");
 
@@ -56,6 +69,14 @@ export const RSVPSection = () => {
       phone: form.phone.trim(),
       attending: form.attending === "sim",
       guests_count: parseInt(form.guests_count) || 0,
+      guest_names:
+        form.attending === "sim" && form.guests_count !== "0" ? form.guest_names.trim() || null : null,
+      children:
+        form.attending === "sim"
+          ? form.children === "sim"
+            ? `Sim - ${form.children_ages.trim()}`
+            : "Não"
+          : null,
       observations: form.observations.trim() || null,
     });
 
@@ -199,6 +220,57 @@ export const RSVPSection = () => {
                       </option>
                     ))}
                   </select>
+                </div>
+              )}
+
+              {/* Guest names */}
+              {form.attending === "sim" && form.guests_count !== "0" && (
+                <div>
+                  <label className="block text-sm uppercase tracking-widest text-marsala font-medium mb-2">
+                    Nome(s) do(s) acompanhante(s) *
+                  </label>
+                  <textarea
+                    name="guest_names"
+                    value={form.guest_names}
+                    onChange={handleChange}
+                    placeholder="Ex: Maria Silva, João Silva"
+                    rows={2}
+                    className="wedding-input w-full text-base resize-none"
+                  />
+                </div>
+              )}
+
+              {/* Children */}
+              {form.attending === "sim" && (
+                <div>
+                  <label className="block text-sm uppercase tracking-widest text-marsala font-medium mb-4">
+                    Vai levar crianças ou filhos? *
+                  </label>
+                  <div className="flex gap-4">
+                    {["nao", "sim"].map((opt) => (
+                      <button
+                        key={opt}
+                        type="button"
+                        onClick={() => setForm((p) => ({ ...p, children: opt }))}
+                        className={`flex-1 py-3 rounded-full border text-sm md:text-base uppercase tracking-widest transition-all duration-300 ${
+                          form.children === opt
+                            ? "bg-gradient-gold border-gold text-card shadow-gold"
+                            : "border-gold/30 text-foreground/60 hover:border-gold/60"
+                        }`}
+                      >
+                        {opt === "sim" ? "✓ Sim" : "✗ Não"}
+                      </button>
+                    ))}
+                  </div>
+                  {form.children === "sim" && (
+                    <input
+                      name="children_ages"
+                      value={form.children_ages}
+                      onChange={handleChange}
+                      placeholder="Idade(s): ex. 3 e 7 anos"
+                      className="wedding-input w-full text-base mt-4"
+                    />
+                  )}
                 </div>
               )}
 

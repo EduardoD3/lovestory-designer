@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1792506368497,
+      "tag": "0000_add_guest_names_and_children_to_rsvp",
+      "breakpoints": true
+    }
+  ]
+}

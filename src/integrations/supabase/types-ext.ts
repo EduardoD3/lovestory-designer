@@ -4,6 +4,8 @@ export type RSVPResponse = {
   phone: string;
   attending: boolean;
   guests_count: number;
+  guest_names?: string | null;
+  children?: string | null;
   observations?: string | null;
   created_at?: string;
 };

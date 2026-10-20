@@ -111,7 +111,7 @@ export const AdminPanel = () => {
               <table className="w-full text-sm">
                 <thead className="bg-marsala/10">
                   <tr>
-                    {["Nome", "Telefone", "Presença", "Acompanhantes", "Obs.", "Data"].map((h) => (
+                    {["Nome", "Telefone", "Presença", "Acompanhantes", "Convidados", "Crianças", "Obs.", "Data"].map((h) => (
                       <th key={h} className="text-left px-4 py-3 text-xs uppercase tracking-widest text-marsala font-medium">
                         {h}
                       </th>
@@ -131,6 +131,8 @@ export const AdminPanel = () => {
                         )}
                       </td>
                       <td className="px-4 py-3 text-foreground/60">{r.guests_count}</td>
+                      <td className="px-4 py-3 text-foreground/60 text-xs max-w-[150px] truncate">{r.guest_names || "—"}</td>
+                      <td className="px-4 py-3 text-foreground/60 text-xs max-w-[120px] truncate">{r.children || "—"}</td>
                       <td className="px-4 py-3 text-foreground/50 text-xs max-w-[150px] truncate">{r.observations || "—"}</td>
                       <td className="px-4 py-3 text-foreground/40 text-xs">
                         {r.created_at ? new Date(r.created_at).toLocaleDateString("pt-BR") : "—"}
@@ -138,7 +140,7 @@ export const AdminPanel = () => {
                     </tr>
                   ))}
                   {rsvps.length === 0 && (
-                    <tr><td colSpan={6} className="px-4 py-8 text-center text-foreground/40">Nenhuma confirmação ainda</td></tr>
+                    <tr><td colSpan={8} className="px-4 py-8 text-center text-foreground/40">Nenhuma confirmação ainda</td></tr>
                   )}
                 </tbody>
               </table>

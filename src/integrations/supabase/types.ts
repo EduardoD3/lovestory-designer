@@ -41,7 +41,9 @@ export type Database = {
       rsvp_responses: {
         Row: {
           attending: boolean
+          children: string | null
           created_at: string
+          guest_names: string | null
           guests_count: number
           id: string
           name: string
@@ -50,7 +52,9 @@ export type Database = {
         }
         Insert: {
           attending: boolean
+          children?: string | null
           created_at?: string
+          guest_names?: string | null
           guests_count?: number
           id?: string
           name: string
@@ -59,7 +63,9 @@ export type Database = {
         }
         Update: {
           attending?: boolean
+          children?: string | null
           created_at?: string
+          guest_names?: string | null
           guests_count?: number
           id?: string
           name?: string
