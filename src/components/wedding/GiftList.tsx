@@ -128,7 +128,7 @@ const CategorySection = ({
               className="flex items-center gap-2 text-sm uppercase tracking-widest px-4 py-2 rounded-full border border-gold/40 text-gold hover:bg-gold hover:text-card transition-all duration-300"
             >
               {gift.link ? <ExternalLink size={14} /> : <Heart size={14} />}
-              {gift.link ? "Ver" : "Presentear com carinho"}
+              {gift.link ? "Ver lista" : "Presentear com carinho"}
             </button>
           </div>
         </motion.div>
@@ -193,6 +193,7 @@ export const GiftList = () => {
         <CategorySection title="Lua de mel ✈️" gifts={luaDeMel} onContribute={handleContribute} />
         <CategorySection title="Reforma da Casa 🏡" gifts={reformaCasa} onContribute={handleContribute} />
         <CategorySection title="Experiências novas 💛" gifts={experiencias} onContribute={handleContribute} />
+        <CategorySection title="Presentes físicos 🎁" gifts={presentesFisicos} onContribute={handleContribute} />
       </div>
     </section>
   );
